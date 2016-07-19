@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:wedpics" x:Class="wedpics.wedpicsPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness">
+			<OnPlatform.iOS>0, 20, 0, 0</OnPlatform.iOS>
+		</OnPlatform>
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Spacing="10" Padding="10">
+				<Image x:Name="image" />
+				<StackLayout Orientation="Horizontal">
+					<Entry x:Name="caption" Placeholder="Caption this picture..." WidthRequest="200"></Entry>
+					<Button x:Name="upload" Text="Upload"></Button>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Button x:Name="takePhoto" Text="Take Photo" />
+					<Button x:Name="pickPhoto" Text="Pick Photo" />
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
